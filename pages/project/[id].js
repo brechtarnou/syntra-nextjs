@@ -4,7 +4,7 @@ import React from "react";
 function Project({ project }) {
   return (
     <div>
-      <h2>{project.name}</h2>
+      <h2>{project?.name}</h2>
       <ul>
         {project.technologies.map((technology) => (
           <li key={technology}>{technology}</li>
