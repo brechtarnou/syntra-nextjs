@@ -7,7 +7,7 @@ function Project({ project }) {
       <h2>{project.name}</h2>
       <ul>
         {project.technologies.map((technology) => (
-          <li>{technology}</li>
+          <li key={technology}>{technology}</li>
         ))}
       </ul>
     </div>
