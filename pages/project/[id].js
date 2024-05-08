@@ -6,7 +6,7 @@ function Project({ project }) {
     <div>
       <h2>{project?.name}</h2>
       <ul>
-        {project.technologies.map((technology) => (
+        {(project?.technologies || []).map((technology) => (
           <li key={technology}>{technology}</li>
         ))}
       </ul>
